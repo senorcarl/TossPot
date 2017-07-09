@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+
+                                             android:background="#fff4f4f4"
+                                             android:orientation="vertical"
+                                             tools:layout_editor_absoluteY="81dp"
+                                             tools:layout_editor_absoluteX="0dp">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:background="#999"
+        android:weightSum="2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="604dp"
+            android:layout_weight="1.00"
+            android:alwaysDrawnWithCache="false"
+            android:background="#fff4f4f4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:weightSum="6"
+            >
+
+            <TextView
+                android:id="@+id/teamAName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Carlos"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/teamAScore"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="56sp"/>
+
+            <Button
+                android:id="@+id/shotShot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#fd0095ff"
+                android:onClick="teamAOneScore"
+                android:text="Shot"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+            <ToggleButton
+                android:id="@+id/toggle_360"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#fd0095ff"
+
+
+                android:text="360"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textOff="360"
+                android:textOn="360 ON"
+                android:textSize="14sp"/>
+
+            <ToggleButton
+                android:id="@+id/toggle_540"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#fd0095ff"
+
+                android:checked="false"
+
+                android:text="540"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textOff="540"
+                android:textOn="540 On"
+                android:textSize="14sp"/>
+
+            <ToggleButton
+                android:id="@+id/toggle_thunder"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_weight="1"
+                android:background="#ffd3d3d3"
+                android:elevation="0dp"
+                android:onClick="thunderButton"
+                android:text="@string/thunder"
+                android:textOff="Thunder"
+                android:textOn="Thunder On"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="604dp"
+            android:layout_weight="1.00"
+            android:background="#fff4f4f4"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/teamBName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Indie"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/teamBSCore"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="56sp"/>
+
+            <ToggleButton
+                android:id="@+id/toggle_blind"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#fd0095ff"
+
+                android:text="Blind"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textOff="Blind"
+                android:textOn="Blind On"
+                android:textSize="14sp"/>
+
+            <ToggleButton
+                android:id="@+id/toggle_shoulder"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#fd0095ff"
+
+                android:text="Shoulder"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textOff="Shoulder"
+                android:textOn="Shoulder On"
+                android:textSize="14sp"/>
+
+            <ToggleButton
+                android:id="@+id/toggle_b540"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#fd0095ff"
+
+                android:text="B540"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textOff="B540"
+                android:textOn="B540 On"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/shotMiss"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+
+                android:background="#ffd3d3d3"
+                android:onClick="resetButton"
+                android:text="Miss"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
